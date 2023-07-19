@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.bg{
+    background: url(artistbg.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    top: 150px;
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    transition: 0.4s ease;
+    margin-top: -130px;
+    margin-left: 20px;
+     position: fixed;
+}
+.container.active{
+    height: 420px;
+}
+.toggleBox{
+    position: relative;
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+}
+.icon{
+    position: absolute;
+    height: 4px;
+    width: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #161d2c;
+    border-radius: 50px;
+}
+.icon::before, .icon::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 35px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #161d2c;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.icon::before{
+    top:12px;
+}
+.icon::after{
+    bottom:8px;
+}
+.toggleBox.active .icon{
+    width: 0;
+}
+.toggleBox.active .icon::before{
+    width: 40px;
+    transform-origin: right;
+    transform: translate(-25px,4px) rotate(45deg);
+}
+.toggleBox.active .icon::after{
+    width: 40px;
+    transform-origin: right;
+    transform: translate(-25px,-6px) rotate(-45deg);
+}
+.navItems{
+    width: 100%;
+    visibility: hidden;
+}
+.container.active .navItems{
+    visibility: visible;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-transform: uppercase;
+    color: #161d2c;
+}
+li a i {
+    position: relative;
+    display: block;
+    font-size: 28px;
+    padding: 25px 0;
+    width: 100%;
+    text-align: center;
+    transform: scale(0);
+}
+li a i::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 0;
+    width: 0px;
+    height: 50%;
+    transform: translateY(-50%);
+    background-color: #41766e;
+    border-radius: 8px 0 0 8px;
+}
+li:hover a i::after{
+    width: 8px;
+    transition: 0.3s;
+}
+.container.active .navItems li a i{
+    transform: scale(1);
+    transition: 0.4s ease;
+    transition-delay: calc(0,08s * var (--1));
+
+}
+.container.active .navItems li:hover a i{
+    transition: 0.2s ease;
+    color: #41766e;
+}
+li a span{
+    position: absolute;
+    color: #fff;
+    margin: 22px 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.container.active .navItems li a span{
+    transform: translateX(15px);
+    transition: 0.4s ease;
+    transition-delay: calc(0,08s * var (--g));
+
+}
+.container.active .navItems li:hover a span{
+    transform: translateX(30px);
+    transition: 0.2s ease;
+    color: #030303;
+}
+/* 4th sec*/
+.container4{
+    width: 100%;
+    padding-top: -10px;
+    padding-bottom: 230px;
+    background: #5d2410;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.artist4{
+    position: absolute;
+    margin-top: 750px; 
+}
+.gallery4{
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-box4{
+    width: 100px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(JOHN\ PAUL/1.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: width 0.5s;
+}
+.img-box4:nth-child(2){
+    background: url(JOHN\ PAUL/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box4:nth-child(3){
+    background: url(JOHN\ PAUL/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box4:nth-child(4){
+    background: url(JOHN\ PAUL/4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box4:nth-child(5){
+    background: url(JOHN\ PAUL/5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box4:nth-child(6){
+    background: url(JOHN\ PAUL/6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box4:nth-child(7){
+    background: url(JOHN\ PAUL/7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box4:hover{
+    width: 300px;
+    cursor: pointer;
+}
+/* 5th sec*/
+.container5{
+    width: 100%;
+    padding-top: -10px;
+    padding-bottom: 230px;
+    background: #ccb89d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.artist5{
+    position: absolute;
+    margin-top: 750px; 
+}
+.gallery5{
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-box5{
+    width: 100px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(JB/img11b.JPG);
+    background-size: cover;
+    background-position: center;
+    transition: width 0.5s;
+}
+.img-box5:nth-child(2){
+    background: url(JB/img12b.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.img-box5:nth-child(3){
+    background: url(JB/img14b.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.img-box5:nth-child(4){
+    background: url(JB/img1b.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.img-box5:nth-child(5){
+    background: url(JB/img2b.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.img-box5:nth-child(6){
+    background: url(JB/img5b.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.img-box5:nth-child(7){
+    background: url(JB/img6b.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box5:nth-child(8){
+    background: url(JB/img7b.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.img-box5:nth-child(9){
+    background: url(JB/img8b.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.img-box5:hover{
+    width: 300px;
+    cursor: pointer;
+}
+/* 6th sec*/
+.container6{
+    width: 100%;
+    padding-top: -10px;
+    padding-bottom: 230px;
+    background: #6a704c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.artist6{
+    position: absolute;
+    margin-top: 750px; 
+}
+.gallery6{
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-box6{
+    width: 100px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(MARY\ JOYCE/1.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: width 0.5s;
+}
+.img-box6:nth-child(2){
+    background: url(MARY\ JOYCE/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box6:nth-child(3){
+    background: url(MARY\ JOYCE/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box6:nth-child(4){
+    background: url(MARY\ JOYCE/4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box6:nth-child(5){
+    background: url(MARY\ JOYCE/5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box6:nth-child(6){
+    background: url(MARY\ JOYCE/6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box6:nth-child(7){
+    background: url(MARY\ JOYCE/7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box6:nth-child(8){
+    background: url(MARY\ JOYCE/8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box6:nth-child(9){
+    background: url(MARY\ JOYCE/9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box6:hover{
+    width: 300px;
+    cursor: pointer;
+}

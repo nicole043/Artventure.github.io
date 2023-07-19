@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.bg{
+    background: url(artistbg.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    top: 150px;
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    transition: 0.4s ease;
+    margin-top: -130px;
+    margin-left: 20px;
+     position: fixed;
+}
+.container.active{
+    height: 420px;
+}
+.toggleBox{
+    position: relative;
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+}
+.icon{
+    position: absolute;
+    height: 4px;
+    width: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #161d2c;
+    border-radius: 50px;
+}
+.icon::before, .icon::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 35px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #161d2c;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.icon::before{
+    top:12px;
+}
+.icon::after{
+    bottom:8px;
+}
+.toggleBox.active .icon{
+    width: 0;
+}
+.toggleBox.active .icon::before{
+    width: 40px;
+    transform-origin: right;
+    transform: translate(-25px,4px) rotate(45deg);
+}
+.toggleBox.active .icon::after{
+    width: 40px;
+    transform-origin: right;
+    transform: translate(-25px,-6px) rotate(-45deg);
+}
+.navItems{
+    width: 100%;
+    visibility: hidden;
+}
+.container.active .navItems{
+    visibility: visible;
+}
+li{
+    list-style: none;
+}
+li a{
+    text-transform: uppercase;
+    color: #161d2c;
+}
+li a i {
+    position: relative;
+    display: block;
+    font-size: 28px;
+    padding: 25px 0;
+    width: 100%;
+    text-align: center;
+    transform: scale(0);
+}
+li a i::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 0;
+    width: 0px;
+    height: 50%;
+    transform: translateY(-50%);
+    background-color: #41766e;
+    border-radius: 8px 0 0 8px;
+}
+li:hover a i::after{
+    width: 8px;
+    transition: 0.3s;
+}
+.container.active .navItems li a i{
+    transform: scale(1);
+    transition: 0.4s ease;
+    transition-delay: calc(0,08s * var (--1));
+
+}
+.container.active .navItems li:hover a i{
+    transition: 0.2s ease;
+    color: #41766e;
+}
+li a span{
+    position: absolute;
+    color: #fff;
+    margin: 22px 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.container.active .navItems li a span{
+    transform: translateX(15px);
+    transition: 0.4s ease;
+    transition-delay: calc(0,08s * var (--g));
+
+}
+.container.active .navItems li:hover a span{
+    transform: translateX(30px);
+    transition: 0.2s ease;
+    color: #030303;
+}
+/* 7th sec*/
+.container7{
+    width: 100%;
+    padding-top: -10px;
+    padding-bottom: 230px;
+    background: #7f6044;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.artist7{
+    position: absolute;
+    margin-top: 750px; 
+}
+.gallery7{
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-box7{
+    width: 100px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(JM\ ARTS/1.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: width 0.5s;
+}
+.img-box7:nth-child(2){
+    background: url(JM\ ARTS/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box7:nth-child(3){
+    background: url(JM\ ARTS/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box7:nth-child(4){
+    background: url(JM\ ARTS/4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box7:nth-child(5){
+    background: url(JM\ ARTS/5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box7:nth-child(6){
+    background: url(JM\ ARTS/6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box7:hover{
+    width: 300px;
+    cursor: pointer;
+}
+/* 8th sec*/
+.container8{
+    width: 100%;
+    padding-top: -10px;
+    padding-bottom: 230px;
+    background: #ede1d1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.artist8{
+    position: absolute;
+    margin-top: 750px; 
+}
+.gallery8{
+    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-box8{
+    width: 100px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(CANARY/1.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: width 0.5s;
+}
+.img-box8:nth-child(2){
+    background: url(CANARY/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box8:nth-child(3){
+    background: url(CANARY/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box8:nth-child(4){
+    background: url(CANARY/4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box8:nth-child(5){
+    background: url(CANARY/5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box8:nth-child(6){
+    background: url(CANARY/6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box8:nth-child(7){
+    background: url(CANARY/7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-box8:hover{
+    width: 300px;
+    cursor: pointer;
+}

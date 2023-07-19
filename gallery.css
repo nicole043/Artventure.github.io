@@ -1,0 +1,135 @@
+.menubar{
+    text-align: left;
+}
+
+.menubar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menubar ul li{
+    width: 180px;
+    height:10px;
+    margin-top: 19px;
+    
+}
+.menubar ul li a {
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: rgb(2, 2, 2);
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+.menubar ul li a img {
+    margin-top: -15px;
+    margin-left: 12px;
+}
+.logocenter{
+    margin-left: 15px;
+}
+.menubar nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    margin :auto;
+}
+.menubar nav a{
+    position:relative;
+    text-decoration: none;
+    font-family: 'Poppin', sans-serif;
+    color: black;
+    font-size: 14px;
+    letter-spacing:0.5px;
+    padding:0 30px;
+}
+.menubar nav a:after{
+    content:"";
+    position: absolute;
+    background-color: rgb(143, 219, 187);
+    height: 3px;
+    width:0;
+    left: 0;
+    bottom:-10px;
+    transition: 0.3s;
+}
+.menubar nav a:hover{
+    color: rgb(105, 104, 104);
+}
+.menubar nav a:hover:after{
+    width:100%
+}
+.artappre{
+    margin-top: -550px;
+}
+#yellow{
+    background-color: #ece571;
+    height: 150px;
+    margin-top: -100px;
+}
+.searchbar{
+    height:20px;
+    width:300px;
+    margin-left: 820px;
+    margin-top: -37px;
+    display: flex;
+    position: relative;
+    cursor:pointer;
+    padding: 10px 20px;
+    background:#fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.searchbar:hover input{
+    width:400px;
+}
+.searchbar input{
+    width:0;
+    outline:none;
+    border:none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.searchbar a .fas{
+    color: #1daf;
+    font-size: 18px;
+}
+.headerpic{
+    margin-top: 20px;
+    margin-right: 5px;
+}
+.Explore{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background: #82887d;
+    width: 350px;
+    height: 20px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration:0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    margin-left: 35%;
+    margin-top: -100px;
+    position: absolute;
+}
+.Explore:hover, .Explore:focus, .Explore:active{
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform:scale(1.1);
+}
+.title{
+    position: absolute;
+    margin-left: 28%;
+    margin-top: -70px;
+}
+
+

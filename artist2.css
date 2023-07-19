@@ -1,0 +1,322 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background: #202731;
+}
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 250px;
+    padding: 100px 20vw;
+}
+/* DIGITAL ARTIST*/
+.text{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 12%;
+    height: 10.37em;
+    width: 80.15em;
+    cursor: pointer
+}
+.text h1{
+    background-color: #0a0a0abb;
+    color: #fff;
+    text-align: center;
+    font-size: 9.37em;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+.text p{
+    color: rgb(97, 94, 94);
+    width: 100%;
+    font-size: 2.5em;
+    position: absolute;
+    transform:translateY(-50%);
+    top: 99%;
+    text-align: center;
+}
+.text:hover h1:nth-child(2){
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    transform: translateY(-50px);
+    transition: 0.8s;
+}
+.text:hover h1:nth-child(3){
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+    transform: translateY(50px);
+    transition: 0.8s;
+}
+
+.blue{
+    background: #a5bc24;
+    height: 500px;
+    margin: -30px auto ;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.slider-container {
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 68%;
+    overflow: hidden;
+    padding: 30px;
+   
+}
+  
+.slider-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 68%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+/* PORTRAIT ARTIST*/
+.pink{
+    background: red;
+    height: 500px;
+    margin: -30px auto ;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+.slider-container1 {
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 68%;
+    overflow: hidden;
+    padding: 30px;
+   
+}
+  
+.slider-container1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 68%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+/* PAINTING ARTIST*/
+.pink1{
+    background: blue;
+    height: 500px;
+    margin: -30px auto ;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.custom-shape-divider-top-1689344081 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1689344081 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 149px;
+}
+
+.custom-shape-divider-top-1689344081 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.spacer{
+    aspect-ratio: 760/400;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1{
+    background-image: url(layered-waves-haikei\ \(2\).svg);
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.card-container{
+    width: 100%;
+    height: 70%;
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.card-container1{
+    width: 100%;
+    height: 70%;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+}
+
+.custom-shape-divider-top-1689346909 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1689346909 svg {
+    position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 314px;
+}
+
+.custom-shape-divider-top-1689346909 .shape-fill {
+    fill: #FFFFFF;
+}
+.spacer1{
+    aspect-ratio: 760/400;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer2{
+    background-image: url(layered-waves-haikei\ \(6\).svg);
+}
+.layer3{
+    background-image: url(layered-waves-haikei\ \(5\).svg);
+}
+
+
+
+/* 2nd Artist*/
+.card1{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(0,0,0,0.25);
+    transition: 1s;
+    
+}
+.card1:hover{
+    transform: translateX(50%);
+}
+.card1 .imgBox1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    background: #000;
+    transition: 1s; 
+}
+.card1:hover .imgBox1{
+    transform: rotateY(-180deg);
+}
+.card1 .imgBox1 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+.card1 .imgBox1 img:nth-child(2){
+    transform: rotateY(180deg);
+}
+.card1 .details1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1 .details1 .content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 23px;
+    margin-bottom: 30px;
+}
+.card1 .details1 .content1 h2{
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+.card1 .details1 .content1 h2 span{
+    color: blueviolet;
+    font-size: 0.8em;
+}
+.card1 .details1 .content1 .social-icons{
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+}
+.card1 .details1 .content1 .social-icons1 a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.scrool-container{
+    width: 50px;
+    height: 50px;
+    background: #0c3655;
+    position: absolute;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 60%;
+}
+
+.scrool-container i{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 13px;
+}

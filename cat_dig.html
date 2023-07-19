@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Art Venture</title>
+        <link rel="stylesheet" href="cat_dig.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="https://kit.fontawesome.com/ab6fa1be73.js" crossorigin="anonymous"></script>
+    </head>
+    <body bgcolor="#41766e">
+        <div class="bg"></div>
+        <div class="container">
+            <a href="#" class="toggleBox">
+                <span class="icon"></span>
+            </a>
+            <ul class="navItems">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-palette" style="--1:1"></i>
+                        <span style="--g:1">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <i class="fa-solid fa-swatchbook"style="--1:2"></i>
+                        <span style="--g:2">Category</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="artist.html">
+                        <i class="fa-solid fa-user" style="--1:3"></i>
+                        <span style="--g:3">Artist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="commission.html">
+                        <i class="fa-solid fa-brush"style="--1:4"></i>
+                        <span style="--g:4">Commission</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            var toggleClick = document.querySelector(".toggleBox");
+            var container = document.querySelector(".container");
+            toggleClick.addEventListener('click', () =>{
+                toggleClick.classList.toggle('active');
+                container.classList.toggle('active');
+            })
+        </script>
+        <div id="digital" class="container1">
+            <div class="artist"><img src="NICOLE/name.jpg" width="550px" height="200px"></div>
+            <div id="nic" class="gallery">
+                <div class="img-box"onclick="expandImage(this)"></div>
+                <div class="img-box"></div>
+                <div class="img-box"></div>
+                <div class="img-box"></div>
+                <div class="img-box"></div>
+                <div class="img-box"></div>
+                <div class="img-box"></div>
+                <div class="img-box"></div>
+                <div class="img-box"></div>
+            </div>
+        </div>
+        <div id="nerm" class="container2">
+            <div class="artist2"><img src="NERM/name.jpg" width="550px" height="200px"></div>
+            <div class="gallery2">
+                <div class="img-box2"></div>
+                <div class="img-box2"></div>
+                <div class="img-box2"></div>
+                <div class="img-box2"></div>
+                <div class="img-box2"></div>
+                <div class="img-box2"></div>
+                <div class="img-box2"></div>
+            </div>
+        </div>
+        <div id="jude" class="container3">
+            <div class="artist3"><img src="JUDE/name.jpg" width="550px" height="200px"></div>
+            <div class="gallery3">
+                <div class="img-box3"></div>
+                <div class="img-box3"></div>
+                <div class="img-box3"></div>
+                <div class="img-box3"></div>
+                <div class="img-box3"></div>
+                <div class="img-box3"></div>
+                <div class="img-box3"></div>
+            </div>
+        </div>
+        <div class="overlay" onclick="shrinkImage()">
+        <img class="expandedImage" src="" alt="Expanded Image"></div>
+        <script>
+            function expandedImage(image){
+                var overlay = document.getElementById("overlay");
+                var expandedImage = document.getElementById("expandedImage");
+
+                overlay.style.display = "block";
+                expandedImage.src = image.src;
+                 document.body.classList.add("expanded")
+            }
+
+            function shrinkImage() {
+                var overlay = document.getElementById("overlay");
+
+                 overlay.style.display ="none";
+                 document.body.classList.remove("expanded");
+            }
+        </script>
+        
+    </body>
+</html>

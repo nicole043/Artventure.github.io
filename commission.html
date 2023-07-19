@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Artventure</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="commission.css">
+    <script src="https://kit.fontawesome.com/ab6fa1be73.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@500&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <script src="commission.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("mOcmWLOzY6Dgup_g7");
+      })();
+    </script>
+  </head>
+  <body bgcolor="#001220">
+    
+    <div class="abvphoto">
+      <img src="PICTURE/pexels-tim-gouw-139764.jpg" alt="" width="100%">
+    </div>
+    <div class="contacts">
+    </div>
+    <div class="base">
+      <div class="row">
+        <div class="title">
+          <h2>Hi there!</h2>
+          <p>
+            Get your custom ARTistic piece of yours + your loved ones now !
+          </p>
+        </div>
+        <div class="process">
+          <div class="icons">
+            <i class="fa-solid fa-file-invoice"></i>
+            <i class="fa-regular fa-credit-card"></i>
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <div class="lines"></div>
+          <div class="lines2"></div>
+        </div>
+        <div class="fill">
+          <p>FILL THE COMMISSION DETAILS</p>
+        </div>
+        <div class="pay">
+          <p>PAY</p>
+        </div>
+        <div class="received">
+          <p>RECEIVED YOUR ART</p>
+        </div>
+        <div class="details">
+          <p>Fill out commission form and let Artventure take care of your request. Fill information needed and let us sail together.</p>
+        </div>
+        <div class="pay1">
+          <p>After approval,we will let you know when you can pay the commission. Artventure support payments from almost anyone in the world.</p>
+        </div>
+        <div class="received1">
+          <p>The Artventure will take a week to process your piece. We will send it right away after making.For inquiries, you can reach us on details below. </p>
+        </div>
+        <div class="form">
+          <h1>Commission form</h1>
+          <div class="form-group">
+            <p for="name">Name:</p>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Full name"
+            />
+          </div>
+          <div class="form-group">
+            <p for="email">Email:</p>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="form-group">
+            <p>Category:</p>
+            <select 
+              class="form-control"
+              id="category"
+              placeholder="Category">
+              <option></option>
+              <option>Digital</option>
+              <option>Painting</option>
+              <option>Portrait</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Select Artist:</p>
+            <select 
+              class="form-control"
+              id="artist"
+              placeholder="Select Artist">
+              <option></option>
+              <option>--Digital Artist--</option>
+              <option>Nicole Quinto</option>
+              <option>Jude Michael Gilves</option>
+              <option>Nermar Tablada</option>
+              <option>--Portrait Artist--</option>
+              <option>John Paul Valdez</option>
+              <option>JB Charelle Eglesia</option>
+              <option>Mary Joyce Catungal</option>
+              <option>--Painter--</option>
+              <option>Jerry Mae Ceballos</option>
+              <option>Canary Caine Castillo</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p for="message">Additions or anything you want to be included to your ARTistic piece:</p>
+            <textarea class="form-control" id="message" rows="3" ></textarea>
+          </div>
+          <p id="notice">If you dont have anything in mind, just leave this empty.Feel free to customize your piece according to your specific requirements and the nature of your desired art </p>
+          <button class="button" onclick="sendMail()">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="back">
+      <a href="index.html"><p>Go Back To Home</p></a>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="sec aboutut">
+          <h2>About Us</h2>
+          <p>Welcome to our Artventure! We are passionate about art and dedicated to providing a platform that celebrates creativity and connects art enthusiasts from all over the world. </p>
+          <ul class="sci">
+            <li><a href="https://www.facebook.com/profile.php?id=100068531595918" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.tiktok.com/@artventure77" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="https://www.instagram.com/ph_laut_a/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        <div class="sec quicklinks">
+          <h2>Support</h2>
+          <ul>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="sec quicklinks">
+          <h2>Category</h2>
+          <ul>
+            <li><a href="">Digital Art</a></li>
+            <li><a href=""> Self-Portrait</a></li>
+            <li><a href="">Painting</a></li>
+          </ul>
+        </div>
+        <div class="sec contact">
+          <h2>Contact Us</h2>
+          <ul class="info">
+            <li>
+              <span><i class="fa-solid fa-phone"></i></span><p><a href="tel:+0123456789">0946-888-4242</a></p>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-envelope"></i></span><p><a href="mailto:nbacwbcebce@eme">nicolequinto592@gmail.com</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="copyrightText">
+      <p>Copyright © 2023 Artventure. All rights reserved.</p>
+    </div>
+  </body>
+</html>

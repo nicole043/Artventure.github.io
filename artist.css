@@ -1,0 +1,102 @@
+body{
+    width: 99%;
+    height: 96vh;
+    background: url(connect.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.signboard img{
+    margin-left: 63%;
+    margin-top: -70px;
+}
+.menubar{
+    text-align: left;
+    display: flex;
+}
+
+.menubar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menubar ul li{
+    width: 180px;
+    height:10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    
+}
+.menubar ul li a {
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color:white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+.menubar ul li a img {
+    margin-top: -15px;
+    margin-left: 12px;
+}
+
+.menubar a img {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+
+.logocenter{
+    margin-left: 15px;
+}
+.menubar nav{
+    display:flex;
+    align-items:center;
+
+}
+.menubar nav a{
+    position:relative;
+    text-decoration: none;
+    font-family: 'Poppin', sans-serif;
+    color: white;
+    font-size: 14px;
+    letter-spacing:0.5px;
+    padding:0 30px;
+}
+.menubar nav a:after{
+    content:"";
+    position: absolute;
+    background-color: rgb(143, 219, 187);
+    height: 3px;
+    width:0;
+    left: 0;
+    bottom:-10px;
+    transition: 0.3s;
+}
+.menubar nav a:hover{
+    color: black;
+}
+.menubar nav a:hover:after{
+    width:100%
+}
+
+.explore{
+    margin-top: 380px;
+    margin-left: 47%;
+    background: #eceaea;
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.artist1{
+    width: 101.8%;
+    height: 650px;
+    background:#bbae97;
+    margin-top: 270px;
+    margin-left: -20px;
+}
+   
+

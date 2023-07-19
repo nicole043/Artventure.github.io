@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Art Venture</title>
+        <link rel="stylesheet" href="cat_dig.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="https://kit.fontawesome.com/63be86936d.js" crossorigin="anonymous"></script>
+    </head>
+    <body bgcolor="#41766e">
+        <div class="bg"></div>
+        <div class="container">
+            <a href="#" class="toggleBox">
+                <span class="icon"></span>
+            </a>
+            <ul class="navItems">
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-palette" style="--1:1"></i>
+                        <span style="--g:1">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <i class="fa-solid fa-swatchbook"style="--1:2"></i>
+                        <span style="--g:2">Category</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="artist.html">
+                        <i class="fa-solid fa-user" style="--1:3"></i>
+                        <span style="--g:3">Artist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="commission.html">
+                        <i class="fa-solid fa-brush"style="--1:4"></i>
+                        <span style="--g:4">Commission</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            var toggleClick = document.querySelector(".toggleBox");
+            var container = document.querySelector(".container");
+            toggleClick.addEventListener('click', () =>{
+                toggleClick.classList.toggle('active');
+                container.classList.toggle('active');
+            })
+        </script>
+        <div id="JM" class="container7">
+            <div class="artist7"><img src="JM ARTS/name.jpg" width="550px" height="200px"></div>
+            <div class="gallery7">
+                <div class="img-box7"></div>
+                <div class="img-box7"></div>
+                <div class="img-box7"></div>
+                <div class="img-box7"></div>
+                <div class="img-box7"></div>
+                <div class="img-box7"></div>
+            </div>
+        </div>
+        <div id="Canary" class="container8">
+            <div class="artist8"><img src="CANARY/name.jpg" width="550px" height="200px"></div>
+            <div class="gallery8">
+                <div class="img-box8"></div>
+                <div class="img-box8"></div>
+                <div class="img-box8"></div>
+                <div class="img-box8"></div>
+                <div class="img-box8"></div>
+                <div class="img-box8"></div>
+                <div class="img-box8"></div>
+            </div>
+        </div>
+    </body>
+</html>
